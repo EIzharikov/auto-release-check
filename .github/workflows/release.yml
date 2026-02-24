@@ -35,6 +35,7 @@ jobs:
           CURRENT="v${{ steps.current.outputs.version }}"
           LATEST="${{ steps.latest_tag.outputs.tag }}"
 
+          echo "Current version is ${CURRENT}, the latest release version is ${LATEST}."
           if [ "$CURRENT" != "$LATEST" ]; then
             echo "changed=true" >> $GITHUB_OUTPUT
           else
