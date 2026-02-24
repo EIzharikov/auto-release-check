@@ -1,6 +1,6 @@
 [project]
 name = "autocheck"
-version = "0.2.1"
+version = "0.2.3"
 
 [tool.black]
 line-length = 100
